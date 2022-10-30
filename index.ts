@@ -6,7 +6,7 @@ import Server from './classes/server';
 import router from './routes/router';
 
 dotenv.config()
-const server = new Server();
+const server = Server.instance;
 
 // BodyParser
 server.app.use(bodyParser.urlencoded({ extended: true }));
